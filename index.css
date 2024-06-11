@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/*                                                                  Header elements */
+
+header {
+  background-color: black;
+  height: 6.5rem;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+}
+/* left side word */
+.greeting {
+  color: greenyellow;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+/* links */
+.internalLinks {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.internalLinks ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.internalLinks li {
+  margin-right: 3rem;
+  color: lightgrey;
+}
+
+/*                                                                  banner elements */
+
+#banner {
+  height: 40rem;
+  width: "100%";
+  /* background-color: blue; */
+  background-image: url("./images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*                                                                  about elements */
+
+#about {
+  height: 400px;
+  width: "100%";
+  background-color: red;
+}
+
+/*                                                                  projects elements */
+
+#projects {
+  height: 400px;
+  width: "100%";
+  background-color: yellow;
+}
+
+/*                                                                   contact elements */
+
+#contacts {
+  height: 400px;
+  width: "100%";
+  background-color: green;
+}
+
+/*                                                                      Footer elements */
