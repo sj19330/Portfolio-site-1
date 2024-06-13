@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(24, 24, 24);
   font-size: 16px;
 }
 
@@ -13,6 +18,7 @@ header {
   position: fixed;
   width: 100%;
   flex-direction: row;
+  z-index: 10;
 }
 /* left side word */
 .greeting {
@@ -43,40 +49,98 @@ header {
   color: lightgrey;
 }
 
+/*                                                                      main content */
+
+main {
+  position: relative;
+  top: 6.5rem;
+}
+
 /*                                                                  banner elements */
 
 #banner {
-  height: 40rem;
+  height: 50rem;
   width: "100%";
-  /* background-color: blue; */
   background-image: url("./images/banner.jpg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: contain;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+/*     banner text */
+
+#banner .text {
+  flex: 1;
+  color: rgb(255, 255, 255);
+  margin-left: 5rem;
+  margin-top: 10rem;
+}
+
+#banner h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#banner h2 {
+  font-size: 2.5rem;
 }
 
 /*                                                                  about elements */
 
-#about {
-  height: 400px;
-  width: "100%";
-  background-color: red;
+/* heading parts */
+.subheading {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subheading h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+/*  sub subheading */
+
+.content h3 {
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* text and image */
+.contentContainer {
+  display: flex;
+}
+
+.contentContainer .inner {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.innerContainer {
+  width: 75%;
+}
+
+.innerContainer img {
+  width: 100%;
+  /* height: 100%; */
 }
 
 /*                                                                  projects elements */
 
-#projects {
-  height: 400px;
-  width: "100%";
-  background-color: yellow;
+.developmentGrid {
+  width: 100%;
+  display: grid;
+  grid-template: 25% 25% 25% / 400px;
 }
-
 /*                                                                   contact elements */
-
-#contacts {
-  height: 400px;
-  width: "100%";
-  background-color: green;
-}
 
 /*                                                                      Footer elements */
