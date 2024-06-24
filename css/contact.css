@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    background-color: white;
+    font-size: 16px;
+    font-family: "Inter", serif;
+  }
+
+  /*                                                                      main content */
+
+main {
+    position: relative;
+    top: 6.5rem;
+  }
+  
+  /*                                                                  Header elements */
+  
+  header {
+    background-color: black;
+    height: 6.5rem;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    z-index: 10;
+  }
+  /* left side word */
+  .greeting {
+    color: white;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  /* links */
+  .internalLinks {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .internalLinks ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  
+  .internalLinks li {
+    margin-right: 3rem;
+    color: lightgrey;
+  }
+  
